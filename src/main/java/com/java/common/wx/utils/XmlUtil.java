@@ -19,6 +19,11 @@ import java.util.Map;
  */
 public class XmlUtil {
 
+    /**
+     *  把xml信息转换成map对象
+     * @param request
+     * @return
+     */
     public static Map<String, String> wxParsing(HttpServletRequest request) {
         try {
             BufferedReader tBufferedReader = new BufferedReader(new InputStreamReader(request.getInputStream()));
